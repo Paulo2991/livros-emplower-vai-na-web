@@ -1,0 +1,51 @@
+.header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);                       
+}
+
+.boxShadow{
+   width: 17vw;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   h1{
+      color: white;  
+      font-size: 20px;                    
+   }                         
+}
+
+.menu{
+    width: 35vw;
+    ul{
+      display: flex;
+      align-items: center; 
+      justify-content: space-between;
+      color: white;
+      font-size: 20px;
+    }                        
+}
+
+.input{
+    border: 2px solid blue;
+    width: 17vw;
+    margin-left: 20px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 15px;
+    input{
+        outline: none;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 15px;
+        padding-left: 6px;
+        &::placeholder{
+            color: white;
+        }                      
+    }                        
+}
