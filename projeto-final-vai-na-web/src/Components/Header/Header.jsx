@@ -1,5 +1,7 @@
 import S from "./Header.module.scss";
 import Livro from "../../assets/livro.png";
+import search from "../../assets/search.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,13 +13,25 @@ function Header() {
         </section>
         <nav className={S.menu}>
           <ul>
-            <li>Inicio</li>
-            <li>Livros Doados</li>
-            <li>Quero Doar</li>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="livrosDoados">Livros Doados</Link>
+            </li>
+            <li>
+              <Link to="queroDoar">Quero Doar</Link>
+            </li>
           </ul>
         </nav>
         <section className={S.input}>
-           <input type="text" id="pesquisa" name="pesquisa" />                 
+          <input
+            type="text"
+            id="pesquisa"
+            name="pesquisa"
+            placeholder="O que vc procura?"
+          />
+          <img src={search} alt="" />
         </section>
       </header>
     </>

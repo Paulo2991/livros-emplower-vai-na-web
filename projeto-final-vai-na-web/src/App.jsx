@@ -1,12 +1,19 @@
 import "./global.scss";
-import Header from "./Components/Header/Header";
-import Main from "./Components/Main/Main";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inicio from "./Pages/Inicio/Inicio";
+import QueroDoar from "./Pages/QueroDoar/QueroDoar";
+import LivrosDoados from "./Pages/LivrosDoados/LivrosDoados";
 
 function App() {
-  return(
+  return (
     <>
-      <Header />
-      <Main />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="livrosDoados" element={<LivrosDoados />} />
+          <Route path="queroDoar" element={<QueroDoar />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

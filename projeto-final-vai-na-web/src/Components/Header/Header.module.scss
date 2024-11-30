@@ -3,17 +3,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, #001B2F 0%, #005695 100%);                       
+    background: linear-gradient(90deg, #001B2F 0%, #005695 100%); 
 }
 
 .boxShadow{
-   width: 17vw;
+   width: 23vw;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
    h1{
       color: white;  
-      font-size: 20px;                    
+      font-size: 25px;               
    }                         
 }
 
@@ -25,11 +25,16 @@
       justify-content: space-between;
       color: white;
       font-size: 20px;
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }                        
 }
 
 .input{
-    border: 2px solid blue;
+    border: 2px solid white;
     width: 17vw;
     margin-left: 20px;
     height: 6vh;
@@ -43,9 +48,28 @@
         border: none;
         color: white;
         font-size: 15px;
-        padding-left: 6px;
         &::placeholder{
             color: white;
         }                      
     }                        
+}
+
+@media screen and (max-width: 600px){
+  .boxShadow{
+    flex-direction: column;
+   h1{
+    font-size: 3vw;
+   }
+   img{
+    width: 5vw;
+   }
+  }
+
+  .menu{
+    width: 50vw;
+    ul{
+      flex-direction: column;
+      font-size: 1.6vm;
+    }
+  }
 }

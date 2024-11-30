@@ -1,0 +1,25 @@
+.footer{
+  padding-top: 25px;
+  height: 15vh;
+}
+
+.conteudoFooter{
+   background-color: #005695;                          
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem;
+   h1{
+      color: white;                      
+   }                         
+}
+
+.diretosReservados{
+    background-color:#232020;
+    height: 8vh;
+    p{
+      text-align: center; 
+      color: white; 
+      padding-top: 15px;                    
+    }                     
+}
