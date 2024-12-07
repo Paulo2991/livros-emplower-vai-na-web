@@ -4,10 +4,9 @@
   align-items: center;
   justify-content: center; 
   height: 70vh;
-
 }
 
-  .livrosCard{
+.livrosCard{
    width: 85vw;
    height: 60vh;
    display: flex;
@@ -21,21 +20,31 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around; 
-      
       div{
          height: 8vh;
          width: 15vw;
          display: flex;
          flex-direction: column;
          align-items: center;
-         justify-content: space-evenly; 
-         text-align: center;                  
+         justify-content: center; 
+         text-align: center;                 
       }
    }
  }
-
 
 .titleLivrosDoados{
   text-align: center;
 }
 
+@media (max-width: 768px){
+  .livrosCard{
+    figure{
+      width: 10em;
+      height: 10em;
+      div{
+        width: 40vw;
+        height: 30vh;
+      }
+    }
+  }
+}

@@ -17,10 +17,10 @@ function Header() {
               <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link to="livrosDoados">Livros Doados</Link>
+              <Link to="/livrosDoados">Livros Doados</Link>
             </li>
             <li>
-              <Link to="queroDoar">Quero Doar</Link>
+              <Link to="/queroDoar">Quero Doar</Link>
             </li>
           </ul>
         </nav>

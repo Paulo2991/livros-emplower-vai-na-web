@@ -2,7 +2,6 @@
     background-image: url("../../assets/Livraria.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -31,7 +30,7 @@
 }
 
 .boxCard{
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -46,35 +45,39 @@
         border-radius: 10px;
         p{
             text-align: center;
-            width: 70%;
             font-size: 20px;
         }
     }
 }
 
-@media screen and (max-width: 600px){
-      .boxCard{
-        flex-direction: column;
-        .conteudo{
-        img{
-          width: 6vw;
-        }
+@media (max-width: 600px){
+    .boxCard{
+       height: auto;
+       flex-direction: column;
+       gap: 15px;
+
+     .conteudo{
+        width: 40vw;
+        height: 40vh;
         p{
-          font-size: 7px;
+          font-size: 15px;
         }
-       
-      }
+       }
     }
 
     .boxLivro{
       h1{
         font-size: 15px;
+        text-align: center;
+        margin-left: 0;
       }
     }
 
-    .titleMain{
+  .titleMain{
+    div{
       h2{
         text-align: center;
       }
     }
+  }
 }
